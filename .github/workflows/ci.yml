@@ -26,3 +26,12 @@ jobs:
       run: npm run lint
     - name: Run Tests
       run: npm run test
+
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Deploying app... 
+      run: |
+        echo 'Deploying...'
+        sleep 10
+        echo 'App successfully deployed!'
